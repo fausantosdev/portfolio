@@ -24,7 +24,7 @@ export const Header = () => {
                     <Image
                         width={177}
                         height={147}
-                        src="/images/logo.svg"
+                        src="/images/logo.webp"
                         alt="Logo Fausantosdev"/>
                 </Link>
 
