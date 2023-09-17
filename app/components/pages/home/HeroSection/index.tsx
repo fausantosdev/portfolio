@@ -26,7 +26,7 @@ const MOCK_CONTACTS = [
 
 export const HeroSection = () => {
     return (
-        <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:py-[110px]">
+        <section className="w-full lg:h-[755px] bg-hero-image bg-cover bg-center bg-no-repeat flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:py-[110px] font-mono">
             <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
                 <div className="w-full lg:max-w-[530px]">
                     <p className="text-emerald-400">Olá, meu nome é</p>
@@ -42,9 +42,9 @@ export const HeroSection = () => {
                     </div>
 
                     <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-                        <Button className="shadow-button w-max">Entre em contato <HiArrowNarrowRight size={18} /></Button>
+                        <Button className="shadow-button sm:w-max">Entre em contato <HiArrowNarrowRight size={18} /></Button>
                         
-                        <div className="text-gray-600 text-2xl flex items-center h-20 gap-3">
+                        <div className="text-gray-600 text-2xl flex justify-center sm:justify-start items-center h-20 gap-3">
                             {MOCK_CONTACTS.map((contact, index) => (
                                 <a href={contact.url} key={index} target="_blank" className="hover:text-gray-100 transition-colors">{contact.icon}</a>
                             ))}
