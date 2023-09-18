@@ -8,7 +8,7 @@ export const KnownTechs = () => {
         <section className="container py-16">
             <SectionTitle title="Conhecimentos" subtitle="competências" />
 
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-60">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-10">
                 {Array.from({ length: 7 }).map((_, index) => (
                     <KnownTech key={index} tech={{
                         name: "Next.js",
